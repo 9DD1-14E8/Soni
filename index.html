@@ -48,15 +48,15 @@
     </div>
 
     <!-- Registered Game Section -->
-    <div class="container">
-        <h2>Registered and Active Private Hack</h2>
-        <p>Exclusive access for registered users.</p>
-        <a href="https://okwinslots5.com/#/register?invitationCode=3668110536053" target="_blank" class="telegram-button" style="display: inline-block; padding: 10px 20px; background-color: #0088cc; color: white; text-decoration: none; border-radius: 5px;">💥☠️GIFT CODE 🎁🧧💥☠️</a>
+    
+        </a>
+        </a>
+        <a href="https://t.me/VIP_SERVER_PANEL" target="_blank" class="giftcode-button" style="display: block; margin-top: 10px; padding: 10px 20px; background-color: #0088cc; color: white; text-decoration: none; border-radius: 5px; text-align: center;">💥☠️GIFT CODE 🎁🧧💥☠️</a>
     </div>
 
     <!-- Notice with Auto Typing -->
     <div style="text-align: center; margin-top: 20px;">
-        <span id="noticeText" style="color: yellow; font-size: 18px; background: black; padding: 10px; border: 2px solid red; display: block; text-align: center; font-weight: bold;"></span>
+        <span id="noticeText" style="color: yellow; font-size: 10px; background: black; padding: 10px; border: 2px solid red; display: block; text-align: center; font-weight: bold;"></span>
     </div>
     <script>
         const text = "⚠️ WARNING! ⚠️🔥 YAH PRIVATE HACK HAI! 🔥💀 BINA MERE LINK SE REGISTER KIYE KOI CHANCE NAHI! 💀💰 ₹300 DEPOSIT KARO, PRIVATE HACK ACTIVATE HOGA! 💰💯 100% WINNING GUARANTEED! 💯";
@@ -72,7 +72,7 @@
     </script>
 
     <!-- Device Info -->
-    <div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; text-align: center; background: black; color: white; padding: 5px; border: 3px solid red; border-radius: 5px;">
+    <div style="position: fixed; bottom: 10px; right: 10px; font-size: 10px; text-align: center; background: black; color: white; padding: 5px; border: 3px solid red; border-radius: 5px;">
         📱 Device Name: <span id="deviceName">Loading...</span> | 🔢 Device ID: <span id="deviceId">Loading...</span>
     </div>
     <script>
@@ -90,5 +90,21 @@
     </script>
 
     <script src="script.js"></script> <!-- Link to JavaScript file -->
-</body>
+<div style="position: fixed; bottom: 10px; right: 10px; font-size: 10px; text-align: center; background: black; color: white; padding: 5px; border: 3px solid red; border-radius: 5px;">
+        📱 Device Name: <span id="deviceName">Loading...</span> | 🔢 Device ID: <span id="deviceId">Loading...</span>
+    </div>
+    <script>
+        function getDeviceInfo() {
+            let deviceName = navigator.userAgent;
+            let deviceId = localStorage.getItem("deviceId");
+            if (!deviceId) {
+                deviceId = "DEV-" + Math.random().toString(36).substr(2, 9).toUpperCase();
+                localStorage.setItem("deviceId", deviceId);
+            }
+            document.getElementById("deviceName").innerText = deviceName;
+            document.getElementById("deviceId").innerText = deviceId;
+        }
+        getDeviceInfo();
+    </script>
+    
 </html>
