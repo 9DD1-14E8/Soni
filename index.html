@@ -72,22 +72,8 @@
     </script>
 
     <!-- Device Info -->
-    <div style="position: fixed; bottom: 10px; right: 10px; font-size: 10px; text-align: center; background: black; color: white; padding: 5px; border: 3px solid red; border-radius: 5px;">
-        📱 Device Name: <span id="deviceName">Loading...</span> | 🔢 Device ID: <span id="deviceId">Loading...</span>
-    </div>
-    <script>
-        function getDeviceInfo() {
-            let deviceName = navigator.userAgent;
-            let deviceId = localStorage.getItem("deviceId");
-            if (!deviceId) {
-                deviceId = "DEV-" + Math.random().toString(36).substr(2, 9).toUpperCase();
-                localStorage.setItem("deviceId", deviceId);
-            }
-            document.getElementById("deviceName").innerText = deviceName;
-            document.getElementById("deviceId").innerText = deviceId;
-        }
-        getDeviceInfo();
-    </script>
+    
+    
 
     <script src="script.js"></script> <!-- Link to JavaScript file -->
 <div style="position: fixed; bottom: 10px; right: 10px; font-size: 10px; text-align: center; background: black; color: white; padding: 5px; border: 3px solid red; border-radius: 5px;">
